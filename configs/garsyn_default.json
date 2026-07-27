@@ -3,7 +3,7 @@
   "epochs": 1000,
   "lr": 0.0001,
   "weight_decay": 0.0001,
-  "hidden_size": 1024,
+  "hidden_size": 512,
   "dropout": 0.1,
   "dim_drug_fp": 1024,
   "dim_drug_seq": 768,

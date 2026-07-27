@@ -2,7 +2,7 @@
 
 Clean PyTorch implementation of **GAR-Syn**, a gated attention and residual aggregation model for anti-cancer drug synergy prediction.
 
-This repository contains only the GAR-Syn model and the scripts needed for training, evaluation, ablation, interpretability, and parameter sensitivity analysis. Large datasets, checkpoints, logs, and generated result files are intentionally excluded.
+This repository contains only the GAR-Syn model and the scripts needed for training, evaluation. Large datasets, checkpoints, logs, and generated result files are intentionally excluded.
 
 ## Model
 
@@ -127,26 +127,6 @@ python run.py evaluate \
   --output ./results_random/summary_all.csv
 ```
 
-## Additional Experiments
-
-Structure ablation:
-
-```bash
-SOURCE_RAW_DIR=/path/to/rawData/drugcomb bash scripts/run_structure_ablation_random.sh
-```
-
-Parameter sensitivity:
-
-```bash
-SOURCE_RAW_DIR=/path/to/rawData/drugcomb bash scripts/run_parameter_sensitivity_random.sh
-```
-
-Interpretability figures require trained checkpoints under `results_random/`:
-
-```bash
-bash scripts/run_interpretability_random.sh
-```
-
 ## Outputs
 
 Training and evaluation generate:
@@ -158,6 +138,3 @@ results_random/GAR-Syn/metrics.csv
 results_random/summary_all.csv
 results_random/summary_all_mean_std.csv
 ```
-
-Generated files are ignored by `.gitignore`.
-
